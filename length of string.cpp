@@ -2,9 +2,10 @@
 #include<string.h>
 int main(){
 	char str[100];
-	int a;
+	int a,*p;
 	printf("input a string:");
 	scanf("%s",&str);
 	a=strlen(str);
-	printf("the length of string is :%d",a);
+	p=&a;
+	printf("the length of string is :%d",*p);
 }
